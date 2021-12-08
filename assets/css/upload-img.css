@@ -1,0 +1,72 @@
+.imgdiv {
+    background-color: #cccccc;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    /* border: blanchedalmond solid 2px; */
+    
+}
+#impPrev {
+    /*background-image: url('../../imgs/imagesdefault.png');*/
+    width: 150px;
+    height: 150px;
+    /* top:0;
+    left:0; */
+    cursor: pointer;
+    position:relative;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inputfile {
+    /*margin-top: -100px;*/
+    visibility: hidden;
+}
+
+.textdown {
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    /* padding: 0px;
+    bottom: -3px; */
+    left: 0px;
+    cursor:pointer;
+    background-color: lightgray;
+    transform: scaleY(0);
+    transition: 0.5s;
+    transform-origin: bottom;
+    position: absolute;
+}
+
+.imgdiv:hover .textdown{
+    transform: scaleY(1);
+}
+.a { 
+    width: 150px;
+    height: 150px;
+    /* text-align: center; */
+    
+    position: relative;
+}
+.remove {
+    width: 25px;
+    height: 30px;
+    border: solid;
+    border-color: gray;
+    top: 3px;
+    right: 3px;
+    background-color: none;
+    position: absolute;
+    z-index:200;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:0.5s;
+}
+
+.a:hover .remove {
+    
+    transform: scaleY(1);
+}
